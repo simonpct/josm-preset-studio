@@ -1,0 +1,17 @@
+name = "josm-preset-studio"
+compatibility_date = "2025-03-01"
+pages_build_output_dir = "dist"
+
+# KV namespace for storing short-linked presets.
+#
+# Local dev: `npm run dev:full` passes `--kv PRESETS` on the CLI so wrangler
+# creates an ephemeral in-memory namespace. No cloud account required.
+#
+# Production: create real namespaces and uncomment the block below:
+#   npx wrangler kv namespace create PRESETS
+#   npx wrangler kv namespace create PRESETS --preview
+#
+# [[kv_namespaces]]
+# binding = "PRESETS"
+# id = "..."
+# preview_id = "..."
